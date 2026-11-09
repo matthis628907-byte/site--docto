@@ -1,0 +1,58 @@
+# Site personnel de doctorante — guide très simple
+
+Ce site utilise seulement deux fichiers importants :
+- `index.html` : les textes et les rubriques du site.
+- `style.css` : les couleurs, les tailles, les espacements et l'apparence.
+
+## 1. Remplacer les informations
+
+Ouvrez `index.html` et cherchez les textes entre crochets, par exemple :
+- `[domaine de recherche]`
+- `[Laboratoire]`
+- `[Université / établissement]`
+- `[Titre de l'article ou de la publication]`
+
+Remplacez ces indications par les vraies informations. Vous pouvez aussi modifier les textes d'exemple dans les paragraphes.
+
+Pour supprimer une rubrique entière, supprimez le bloc correspondant qui commence par `<section ...>` et se termine par `</section>`.
+
+## 2. Ajouter une photo
+
+Placez une photo dans le dossier `images` et nommez-la `profile.jpg`.
+La photo apparaîtra automatiquement dans la colonne de gauche.
+
+## 3. Ajouter une publication, une communication ou une actualité
+
+Dans `index.html`, chaque élément est présenté dans un bloc qui commence par :
+`<div class="entry">`
+et se termine par :
+`</div>`
+
+Copiez ce bloc, collez-le juste après, puis remplacez la date et le texte.
+
+## 4. Modifier l'apparence
+
+Ouvrez `style.css`. Tout en haut, vous trouverez les couleurs principales :
+- `--ink` : couleur du texte.
+- `--muted` : couleur du texte secondaire.
+- `--accent` : couleur des liens.
+- `--line` : couleur des séparateurs.
+
+Vous pouvez modifier les codes couleur sans toucher au reste.
+
+## 5. Publier gratuitement avec GitHub Pages
+
+1. Créez un compte sur https://github.com si nécessaire.
+2. Cliquez sur le `+` en haut à droite, puis `New repository`.
+3. Donnez au dépôt un nom simple, par exemple `site-doctorante`.
+4. Choisissez `Public`, puis créez le dépôt.
+5. Dans le dépôt, cliquez sur `Add file` puis `Upload files`.
+6. Envoyez `index.html`, `style.css` et le dossier `images` (s'il contient la photo). Vous pouvez aussi déposer le contenu du dossier directement.
+7. Cliquez sur `Commit changes`.
+8. Ouvrez `Settings` > `Pages`.
+9. Dans `Build and deployment`, choisissez `Deploy from a branch`, puis `main` et `/ (root)`, et enregistrez.
+10. Après quelques minutes, GitHub affichera l'adresse publique du site dans cette même rubrique.
+
+Pour modifier le site plus tard : ouvrez `index.html` ou `style.css` sur GitHub, cliquez sur le crayon, faites vos changements et cliquez sur `Commit changes`.
+
+Conseil : gardez toujours une copie des fichiers sur votre ordinateur avant de faire de grosses modifications.

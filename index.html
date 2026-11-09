@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Page professionnelle de Prénom et Nom, doctorante en [domaine].">
+  <title>Prénom et Nom | Doctorante</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="mobile-header">
+    <a class="site-name" href="#top">Prénom et Nom</a>
+    <a href="mailto:adresse@universite.fr">Me contacter</a>
+  </header>
+
+  <div class="page" id="top">
+    <aside class="sidebar">
+      <div class="avatar">
+        <!-- Remplacez profile.jpg par votre photo, à placer dans le dossier images -->
+        <img src="images/profile.jpg" alt="Photo de Prénom et Nom"
+             onerror="this.style.display='none'; this.parentElement.classList.add('no-photo');">
+        <span class="avatar-placeholder">Photo</span>
+      </div>
+
+      <h1>Prénom et Nom</h1>
+      <p class="role">Doctorante en [domaine de recherche]</p>
+      <p class="affiliation">[Laboratoire]<br>[Université / établissement]</p>
+
+      <div class="contact-links">
+        <a href="mailto:adresse@universite.fr">E-mail</a>
+        <a href="[URL-ORCID]">ORCID</a>
+        <a href="[URL-Google-Scholar]">Google Scholar</a>
+        <a href="[URL-LinkedIn]">LinkedIn</a>
+      </div>
+
+      <nav aria-label="Navigation principale">
+        <a href="#about">À propos</a>
+        <a href="#research">Recherche</a>
+        <a href="#publications">Publications</a>
+        <a href="#talks">Communications</a>
+        <a href="#news">Actualités</a>
+      </nav>
+    </aside>
+
+    <main>
+      <section id="about">
+        <p class="eyebrow">Page personnelle</p>
+        <h2>À propos</h2>
+        <p>
+          Je suis doctorante en <strong>[discipline / domaine]</strong> au sein de
+          <strong>[nom du laboratoire]</strong>, à <strong>[nom de l'université]</strong>.
+          Mes recherches portent sur <strong>[sujet général de la thèse]</strong>.
+        </p>
+        <p>
+          Après une formation en [formation / établissement], j'ai débuté une thèse
+          en [année de début], sous la direction de [nom de la directrice ou du directeur].
+          Cette page présente mes travaux, mes publications et mes activités scientifiques.
+        </p>
+        <p class="small-note">Vous pouvez remplacer librement ces textes par votre présentation.</p>
+      </section>
+
+      <section id="research">
+        <h2>Recherche</h2>
+        <p>
+          Mon projet de recherche s'intéresse à [présentation du sujet de thèse en quelques
+          phrases : contexte, problématique et objectif principal].
+        </p>
+        <h3>Axes de recherche</h3>
+        <ul class="research-list">
+          <li><strong>[Axe de recherche 1]</strong><br><span>Courte description de cet axe de recherche.</span></li>
+          <li><strong>[Axe de recherche 2]</strong><br><span>Courte description de cet axe de recherche.</span></li>
+          <li><strong>[Axe de recherche 3]</strong><br><span>Courte description de cet axe de recherche.</span></li>
+        </ul>
+        <p><strong>Mots-clés :</strong> [mot-clé 1] · [mot-clé 2] · [mot-clé 3]</p>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <div class="entry">
+          <span class="date">[Année]</span>
+          <div>
+            <p><strong>[Titre de l'article ou de la publication]</strong></p>
+            <p>[Prénom Nom], [co-auteurs]. <em>[Nom de la revue / conférence]</em>.</p>
+            <p><a href="[LIEN-VERS-LA-PUBLICATION]">Consulter la publication →</a></p>
+          </div>
+        </div>
+        <!-- Dupliquez le bloc .entry pour ajouter une publication. -->
+        <p class="small-note">Supprimez cette rubrique si vous n'avez pas encore de publication.</p>
+      </section>
+
+      <section id="talks">
+        <h2>Communications</h2>
+        <div class="entry">
+          <span class="date">[Date]</span>
+          <div>
+            <p><strong>[Titre de la présentation]</strong></p>
+            <p>[Nom de la conférence / du séminaire], [Ville ou format].</p>
+          </div>
+        </div>
+        <!-- Dupliquez le bloc .entry pour ajouter une communication. -->
+      </section>
+
+      <section id="news">
+        <h2>Actualités</h2>
+        <div class="entry">
+          <span class="date">[Mois Année]</span>
+          <div>
+            <p><strong>[Titre ou événement]</strong></p>
+            <p>[Courte description de l'actualité : participation à un événement, prix, projet, etc.]</p>
+          </div>
+        </div>
+        <!-- Dupliquez le bloc .entry pour ajouter une actualité. -->
+      </section>
+
+      <footer>
+        <p>© <span id="year">2026</span> Prénom et Nom · Dernière mise à jour : [Mois Année]</p>
+      </footer>
+    </main>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
